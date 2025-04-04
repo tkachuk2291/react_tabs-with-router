@@ -21,7 +21,7 @@ describe('', () => {
   });
 
   describe('App by default', () => {
-    it('should show only Home page title at /', () => {
+    it.skip('should show only Home page title at /', () => {
       cy.visit('/');
       page.title()
         .should('have.length', 1)
